@@ -1111,3 +1111,27 @@ transition: all 1s ease-in-out;
 .menu-footer span{color: #1fa0d5;}
 .menu-footer a{color: #fff;}
 .menu-copyright p{font-size: 14px;}
+
+.headingTable{ min-height: 60px;  display: block; position: relative;}
+.headingTable table{width: 100%;}
+.headingTable tr td{padding: 0px; font-weight: 500;font-size:22px;}
+.headingTable tr td:nth-child(1){width: 45%;}
+.headingTable tr td:nth-child(2){width: 20%; text-align: center;}
+.headingTable tr td:nth-child(3){width: 22%; text-align: center; }
+.headingTable tr td:nth-child(4){width:23%; text-align: center;}
+
+
+.dataTable table{width: 100%;}
+.dataTable table tr th{width: 45%;     padding: 26px; }
+.dataTable table tr th:nth-child(1){background:#f6f6f6;}
+.dataTable table tr th h2{font-size:22px;}
+.dataTable tr td{padding:15px 0 15px 22px;color: #646466; font-size: 14px;}
+.dataTable tr td:nth-child(1){background:#f6f6f6;}
+.dataTable tr td:nth-child(2){width: 20%;text-align: center;border-bottom: 1px solid #ececec;}
+.dataTable tr td:nth-child(3){width: 22%; text-align: center;border-bottom: 1px solid #ececec;}
+.dataTable tr td:nth-child(4){width: 22%; text-align: center;border-bottom: 1px solid #ececec;}
+.dataTable tr:hover, .dataTable tr td:nth-child(1):hover{background: #fcfbec !important; }
+
+.dataTable tr td:nth-child(4){width:23%; text-align: center;}
+.dataTable tr td .fa-check{color: #37c178}
+.dataTable tr td .fa-times{color: #919191;}
