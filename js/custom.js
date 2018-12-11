@@ -162,4 +162,8 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
         });
 
 
+$('.menubtn').on('click', function (event) {
+    event.preventDefault();
+    $(".menu-container").css({"transform": "scale(1) translateX(0px)"});
 
+});
