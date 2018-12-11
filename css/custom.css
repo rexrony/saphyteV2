@@ -1104,6 +1104,10 @@ transition: all 1s ease-in-out;
 .menu-social ul{margin: 0px; padding: 0px; list-style: none}
     .menu-social ul li{display: inline-block; margin-right: 10px; background: #16102c; border-radius: 25px;width: 38px; height: 38px; text-align: center; line-height: 36px; }
 .menu-social li a{color: #fff; }
+
+.menu-items{min-height: 400px; display:block; position: relative;}
+
 .menu-footer{color: #fff;font-size: 14px;bottom: 60px; position: absolute; }
 .menu-footer span{color: #1fa0d5;}
 .menu-footer a{color: #fff;}
+.menu-copyright p{font-size: 14px;}
