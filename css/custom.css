@@ -258,7 +258,7 @@ color: #777a92;
 .top1-min .btn-outline-primary{ color: #fff!important; border-color: #fff}
 .menu-animate{ display:block; vertical-align: middle; padding: 5px 0;}
 .menu-animate a{color: #fff;display: inline-block;position: relative;cursor: pointer;text-transform: uppercase;}
-.menu-animate a label{float: left;margin: 0px;cursor: pointer;}
+.menu-animate a label{float: left;margin: 0px;cursor: pointer;    font-weight: 500;}
 .menu-animate span{border: 1px solid #fff; height: 1px;width:20px; display: block;margin-bottom: 2px; left: 0px; top: 19px; position: absolute; opacity: 0;
   -webkit-transition: .25s ease-in-out;
   -moz-transition: .25s ease-in-out;
@@ -1079,3 +1079,14 @@ inner-wrap
 .inner-wrap{background: url('../img/inner-banner.jpg') no-repeat; background-size:100% 100%; overflow: hidden;min-height: 720px;}
 
 
+/***
+Menu Css menu-container
+***/
+.menu-container{width: 100%; min-height: 841px; height:100vh; background: url('../img/menu-bckgrnd.jpg') no-repeat; background-size:cover; position: fixed; top: 0px; z-index:1090; background-position-x: center; background-position-y: center; overflow: hidden; }
+.menu-container .crm-btm{
+    position: absolute; bottom: 0px; right: 0px; z-index: 0; 
+}
+.menu-container .crm-btm h1{ color: white;  /* Fallback: assume this color ON TOP of image */
+   background: url(images/fire.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;}
