@@ -963,6 +963,17 @@ transition: all 0.8s ease-in-out;
 .slide-container .slide-btm ul li a{font-size: 15px;}
 .slide-container .slide-btm ul li a:hover{color: #8e54db;}
 
+.img-wraps{position: relative;}
+.img-wraps .figure{position: absolute;z-index: 0}
+.img-wraps .figure figure{z-index: 99}
+.img-wraps .figure figure img{position: absolute; z-index: 1}
+.img-wraps .figure:nth-child(1){right:350px;top: 454px;}
+.img-wraps .figure:nth-child(1) figure img{ top:-296px;  width: 45%; left:96px;}
+.img-wraps .figure:nth-child(2){right: 240px; top: 237px;}
+.img-wraps .figure:nth-child(2) figure img{top: -233px; left: -63px;}
+.img-wraps .figure:nth-child(3){float: right;right: -75px;  top: 289px;}
+
+
 .fm-activate .navbar{background: #474747;}
 .overlayImg{width: 50%; height: 100vh;background: url(../img/bck-moving.png) no-repeat left center; background-size:contain;position: absolute; top: 0px;bottom: 0px; z-index: 9999; opacity: 0.5;left: 0%;
 -moz-transform: scale(1) translateX(-1900px) translateY(0px);
