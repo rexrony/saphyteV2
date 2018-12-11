@@ -1082,11 +1082,16 @@ inner-wrap
 /***
 Menu Css menu-container
 ***/
-.menu-container{width: 100%; min-height: 841px; height:100vh; background: url('../img/menu-bckgrnd.jpg') no-repeat; background-size:cover; position: fixed; top: 0px; z-index:1090; background-position-x: center; background-position-y: center; overflow: hidden; }
-.menu-container .crm-btm{
-    position: absolute; bottom: 0px; right: 0px; z-index: 0; 
-}
-.menu-container .crm-btm h1{ color: white;  /* Fallback: assume this color ON TOP of image */
-   background: url(images/fire.jpg) no-repeat;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;}
+.menu-container{width: 100%; min-height:500px; height:100vh; background: /*url('../img/menu-bckgrnd.jpg')*/ #1f1637 no-repeat; background-size:cover; position: fixed; top: 0px; z-index:1090; background-position-x: center; background-position-y: center; overflow: hidden; }
+.menu-container:before{content: ""; display: block; background: url('../img/menu-tp-rht.png') no-repeat;width: 470px; height: 470px; position: absolute; top: 0px; right: 0px;}
+.menu-container .crm-btm{  position: absolute; bottom: -135px; right: -160px; z-index: -1;display: block; min-height:600px; }
+.menu-container .crm-btm h1{ color:#231b41; font-size:32rem;display: inline; font-weight: 500;  background: url('../img/crmimg.png') no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.5;  right: 0px;}
+.menu-social{color: #fff;}
+.menu-social label{color: #fff;position: relative;font-size: 14px;padding: 0 0 0 0px;}
+.menu-social label:before{content: ""; display: block; left: -59px; width:50px; height: 1px;background: #4f4967;position: absolute;top:10px;}
+.menu-social ul{margin: 0px; padding: 0px; list-style: none}
+    .menu-social ul li{display: inline-block; margin-right: 10px; background: #16102c; border-radius: 25px;width: 38px; height: 38px; text-align: center; line-height: 36px; }
+.menu-social li a{color: #fff; }
+.menu-footer{color: #fff;font-size: 14px;bottom: 0px; position: absolute; }
+.menu-footer span{color: #1fa0d5;}
+.menu-footer a{color: #fff;}

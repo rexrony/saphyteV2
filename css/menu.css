@@ -96,31 +96,30 @@
  */
 #menu
 {
-  position: absolute;
-  width: 300px;
-  margin:24px 0 0 -249px;
-  padding: 20px;
-  
-  background: var(--red1);
+  float: left;
+  margin:24px 0 0 0px;
+  padding: 0 0 0 60px; left: 0px;
+
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+  /*
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
 }
-#menu a.active{ font-weight: 600;color: #52027a;}
-#menu a.active li{ color:#52027a;}
+#menu a.active{ font-weight: 500;color: #9e4adf; font-size: 24px; }
+#menu a.active li{ color:#605876;}
 #menu li
 {
-  padding:5px 10px;
-  font-size: 20px;
+  padding:0px 0px;
+  font-size: 24px;
 }
-#menu li{ color: #fff; transition: 0.5s all}
-#menu li a{color: #fff; }
-#menu li:hover,#menu li:hover a{ color:#52027a;}
+#menu li{ color: #605876; transition: 0.5s all; position: relative;    margin-bottom: 15px;}
+#menu li a{color: #605876; text-shadow: 0.3px 0.4px;}
+#menu li:hover,#menu li:hover a{ color:#fff;}
+#menu li:hover a:before{content: ""; display: block; width:3px; height: 20px;  border-left:3px solid #9e4adf; float: left; position: absolute;top: 10px;left: -20px; }
 /*
  * And let's slide it in from the left
  */
@@ -128,3 +127,4 @@
 {
   transform: none;
 }
+.menu-items{min-height: 400px; padding: 100px 0;}
